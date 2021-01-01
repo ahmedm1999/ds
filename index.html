@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>TEST</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="card">
+            <h1>Password Generator</h1>
+            <div class="screen">
+                <input type="text" id="pass-screen" readonly>
+            </div>
+            <div class="length range__slider" data-min="4" data-max="32">
+                <div class="length__title field-title" data-length='0'>length:</div>
+                <input id="slider" type="range" min="4" max="36" value="16"/>
+            </div>
+            <div class="options">
+                <div class="option">
+                    <span calss="option-header">Includes UpperCase</span>
+                    <label for="upper"></label>
+                    <input type="checkbox" id="upper" checked>
+                </div>
+                <div class="option">
+                    <span calss="option-header">Includes LowerCase</span>
+                    <label for="lower"></label>
+                    <input type="checkbox" id="lower" checked>
+                </div>
+                <div class="option">
+                    <span calss="option-header">Includes Numbers</span>
+                    <label for="number"></label>
+                    <input type="checkbox" id="number" checked>
+                </div>
+                <div class="option">
+                    <span calss="option-header">Includes Symbols</span>
+                    <label for="symbol"></label>
+                    <input type="checkbox" id="symbol" checked>
+                </div>
+            </div>
+            <button class="btn" id="btn">Generate Password</button>
+        </div>
+        
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
